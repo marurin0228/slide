@@ -177,8 +177,24 @@ app.use(bodyParser.urlencoded({extended: false}));
 +++?code=4-14.ejs
 index.ejs
 
-+++?code=4-15.css
-style.css
++++
+```css
+table {
+    margin: 20px;
+}
+table tr th {
+    background-color: #999;
+    color: #fff;
+    text-align: center;
+    padding: 3px 10px;
+}
+table tr td {
+    background-color: #eee;
+    color: #666;
+    text-align: left;
+    padding: 3px 10px;
+}
+```
 
 テーブル関連のスタイルを追加しておく。
 

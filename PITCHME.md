@@ -57,6 +57,7 @@ package.json
 テンプレートのソースコードを記述する
 
 +++?code=4-04.ejs
+index.ejs
 @[15](<%- %>タグでエスケープ処理をせずにそのまま出力)
 
 +++
@@ -64,6 +65,7 @@ package.json
 ### テンプレートファイルを読み込んで表示する
 
 +++?code=4-05.js
+index.js
 @[2](EJSモジュールをロード)
 
 @[6](レンダリングエンジンの設定、ejsオブジェクトの「renderFile」メソッドを用いてレンダリングする)
@@ -83,6 +85,7 @@ package.json
 ###　公開フォルダのファイルを使う
 
 +++?code=4-07.js
+index.js
 @[8](アプリケーションに処理を追加している)
 
 +++
@@ -97,6 +100,7 @@ expressオブジェクトの中のstaticというメソッドを表している�
 static('public')とするとpublicフォルダ内のファイルが使えるようになる。
 
 +++?code=4-09.js
+index.js
 
 @[9,21](これによって２つのページを表示できるようにした)
 
@@ -110,6 +114,7 @@ Expressではapp.getを使用することでNode.jsと比べて、
 ###　クエリーパラメーターの利用
 
 +++?code=4-10.js
+index.js
 
 @[23,24](queryにキーを指定すればその値を取り出すことができる。))
 
@@ -138,6 +143,7 @@ Expressではapp.getを使用することでNode.jsと比べて、
 @[16,17,18,19](入力フィールドを持ったフォームを用意した。)
 
 +++?code=4-12.js
+index.js
 @[8](Body Parserのロードを行う。)
 @[9](urlencodedを設定。詳細は後述)
 @[24,25](req.body.messageが送られた値であり, BodyParserによってbodyにまとめられる)
@@ -165,14 +171,16 @@ app.use(bodyParser.urlencoded({extended: false}));
 ### テーブル表示
 
 +++?code=4-14.ejs
+index.ejs
 @[17,18,19](変数dataから順に値を取り出すようにしている。そしてkeyとdata[key]の値をパーシャル側へ渡す。)
 
 +++?code=4-15.css
+style.css
 
 テーブル関連のスタイルを追加しておく。
 
 +++?code=4-16.js
-
+index.js
 @[11,12,13,14,15,16](データを追加する。dataをdataとして渡している。))
 Expressではfilenameの指定が不要である。
 
@@ -257,6 +265,7 @@ Expressではfilenameの指定が不要である。
 - app.js
 - package.json, package-lock.json
 +++?code=4-17.js
+app.js
 ##　プログラムの流れの整理
 
 @[1,2,3,4,5] (必要なモジュールのロード)
@@ -319,11 +328,11 @@ moduleオブジェクトの「exports」というプロパティにappオブジ�
 ## Webページを追加してみる
 テンプレート、ルーティング用スクリプト、を作ってみよう
 +++?code=4-21.ejs
-
+hello.ejs
 ### テンプレートの作成
 
 +++?code=4-22.js
-
+index.js
 ### ルーティング用スクリプトの作成
 
 +++

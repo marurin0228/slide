@@ -49,7 +49,7 @@
 テンプレートエンジンの導入を行う
 コマンドは「npm install --save ejs」
 +++?code=4-03.json
-
+package.json
 @[11,12,13,14](dependenciesの項目の値にejsの値が追加されている)
 
 +++

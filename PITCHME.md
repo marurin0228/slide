@@ -176,7 +176,6 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 +++?code=4-14.ejs
 index.ejs
-@[17,18,19](変数dataから順に値を取り出すようにしている。そしてkeyとdata[key]の値をパーシャル側へ渡す。)
 
 +++?code=4-15.css
 style.css

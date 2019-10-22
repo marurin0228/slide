@@ -195,13 +195,17 @@ table tr td {
     padding: 3px 10px;
 }
 ```
-
+style.css
 テーブル関連のスタイルを追加しておく。
 
 +++?code=4-16.js
 index.js
 @[11,12,13,14,15,16](データを追加する。dataをdataとして渡している。))
+
++++
 Expressではfilenameの指定が不要である。
+
+テンプレート側でincludeすればパーシャルを利用できる。
 
 +++
 ![output1](4-16.png)

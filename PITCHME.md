@@ -127,7 +127,7 @@ Expressではapp.getを使用することでNode.jsと比べて、
 
 +++
 
-# Body Parser
+#W Body Parser
 
 +++
 
@@ -199,7 +199,7 @@ Expressではfilenameの指定が不要である。
 
 
 ---
-# 4-3 Express Generator
+## 4-3 Express Generator
 
 +++
 ## Expressの不満点は？

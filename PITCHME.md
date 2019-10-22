@@ -143,6 +143,7 @@ index.js
 導入するコマンドは「npm install --save body-parser」
 
 +++?code=4-11.ejs
+index.ejs
 @[16,17,18,19](入力フィールドを持ったフォームを用意した。)
 
 +++?code=4-12.js

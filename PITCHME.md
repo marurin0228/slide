@@ -239,7 +239,7 @@ Expressではfilenameの指定が不要である。
 - 手書きであること
 - ソースコードの整理が必要
 - 必要なモジュールをインストールしなければならない
-- Express Generatorが解決してくれる!!! |
+- ★Express Generatorが解決してくれる!!! |
 
 +++
 
